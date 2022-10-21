@@ -12,7 +12,41 @@ function renderLicenseBadge(license) {
     return "";
   }
 }
+//Description section
+//  Create a function that returns the description section of README
+// If there is no description, return an empty string
+function renderDescriptionSection(description) {
+  if (description) {
+    return `## Description
+${description}`;
+  } else {
+    return "";
+  }
+}
 
+// Installation link
+//Create a function that returns the installation link
+// If there is no installation, return an empty string
+function renderInstallationLink(installation) {
+  if (installation) {
+    return "- [Installation](#installation)";
+  } else {
+    return "";
+  }
+}
+
+// Usage link
+// Create a function that returns the usage link
+// If there is no usage, return an empty string
+function renderUsageLink(usage) {
+  if (usage) {
+    return "- [Usage](#usage)";
+  } else {
+    return "";
+  }
+}
+
+// License link
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -23,6 +57,59 @@ function renderLicenseLink(license) {
   }
 }
 
+// Contributing link
+// Create a function that returns the contributing link
+// If there is no contributing, return an empty string
+function renderContributingLink(contributing) {
+  if (contributing) {
+    return "- [Contributing](#contributing)";
+  } else {
+    return "";
+  }
+}
+// Tests link
+// Create a function that returns the tests link
+// If there is no tests, return an empty string
+function renderTestsLink(tests) {
+  if (tests) {
+    return "- [Tests](#tests)";
+  } else {
+    return "";
+  }
+}
+
+//Questions link
+// Create a function that returns the questions link
+// If there is no questions, return an empty string
+function renderQuestionsLink() {
+  return "- [Questions](#questions)";
+}
+
+//Installation section
+// Create a function that returns the installation section of README
+// If there is no installation, return an empty string
+function renderInstallationSection(installation) {
+  if (installation) {
+    return `## Installation
+${installation}`;
+  } else {
+    return "";
+  }
+}
+
+//Usage section
+// Create a function that returns the usage section of README
+// If there is no usage, return an empty string
+function renderUsageSection(usage) {
+  if (usage) {
+    return `## Usage
+${usage}`;
+  } else {
+    return "";
+  }
+}
+
+// License section
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
@@ -35,66 +122,42 @@ This project is licensed under the [${license}](./LICENSE) license.`;
   }
 }
 
-//  Create a function that returns the description section of README
-// If there is no description, return an empty string
-function renderDescriptionSection(description) {
-  if (description) {
-    return `## Description
-${description}`;
-  } else {
-    return "";
-  }
-}
-
-//Create a function that returns the installation link
-// If there is no installation, return an empty string
-function renderInstallationLink(installation) {
-  if (installation) {
-    return "- [Installation](#installation)";
-  } else {
-    return "";
-  }
-}
-
-// Create a function that returns the usage link
-// If there is no usage, return an empty string
-function renderUsageLink(usage) {
-  if (usage) {
-    return "- [Usage](#usage)";
-  } else {
-    return "";
-  }
-}
-
-// Create a function that returns the contributing link
+//Contributing section
+// Create a function that returns the contributing section of README
 // If there is no contributing, return an empty string
-function renderContributingLink(contributing) {
+function renderContributingSection(contributing) {
   if (contributing) {
-    return "- [Contributing](#contributing)";
+    return `## Contributing
+${contributing}`;
   } else {
     return "";
   }
 }
 
-// TODO: Create a function that returns the tests link
-// If there is no tests, return an empty string
-function renderTestsLink(tests) {
+// Tests section
+// Create a function that returns the tests section of README
+// If there are no tests, return an empty string
+function renderTestsSection(tests) {
   if (tests) {
-    return "- [Tests](#tests)";
+    return `## Tests
+${tests}`;
   } else {
     return "";
   }
 }
 
-// TODO: Create a function that returns the questions link
-// If there is no questions, return an empty string
-function renderQuestionsLink(questions) {
-  if (questions) {
-    return "- [Questions](#questions)";
+// Questions section
+// Create a function that returns the questions section of README
+// If there are no questions, return an empty string
+function renderQuestionsSection(email, userName) {
+  if (email && userName) {
+    return `## Questions
+  If you have any questions about the repo,open an issue or contact me directly at ${email}. You can find more of my work at ${userName}.`;
   } else {
     return "";
   }
 }
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -106,11 +169,17 @@ function generateMarkdown(data) {
   ${renderLicenseLink(data.license)}
   ${renderContributingLink(data.contributing)}
   ${renderTestsLink(data.tests)}
-  ${renderQuestionsLink(data.questions)}
-   ${renderLicenseSection(data.license)}`;
+  ${renderQuestionsLink()}
+  ${renderInstallationSection(data.installation)}
+  ${renderUsageSection(data.usage)}
+  ${renderLicenseSection(data.license)}
+  ${renderContributingSection(data.contributing)}
+  ${renderTestsSection(data.tests)}
+  ${renderQuestionsSection(data.email, data.userName)}`;
 }
 
 module.exports = generateMarkdown;
 
 // # ${data.email}
 //# ${data.userName}
+//need to commit sections
