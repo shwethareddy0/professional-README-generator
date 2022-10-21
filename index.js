@@ -32,17 +32,17 @@ const questions = [
   },
   {
     type: "input",
-    name: "cmdForDependencies",
+    name: "installation",
     message: "What command should be run to install dependencies? ",
   },
   {
     type: "input",
-    name: "cmdForTests",
+    name: "tests",
     message: "What command should be run to run tests?",
   },
   {
     type: "input",
-    name: "repoInfo",
+    name: "usage",
     message: "What does the user need to know about using the repo?",
   },
   {
