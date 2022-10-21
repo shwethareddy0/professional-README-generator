@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  license = license.toUpperCase();
   if (license == "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license == "Apache") {
@@ -25,6 +26,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  license = license.toUpperCase();
   if (license) {
     return `## License
 This project is licensed under the [${license}](./LICENSE) license.`;
@@ -33,12 +35,12 @@ This project is licensed under the [${license}](./LICENSE) license.`;
   }
 }
 
-//  Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license) {
-    return `## License
-This project is licensed under the [${license}](./LICENSE) license.`;
+//  Create a function that returns the description section of README
+// If there is no description, return an empty string
+function renderDescriptionSection(description) {
+  if (description) {
+    return `## Description
+${description}`;
   } else {
     return "";
   }
@@ -47,8 +49,7 @@ This project is licensed under the [${license}](./LICENSE) license.`;
 function generateMarkdown(data) {
   return `# ${data.title}
  ${renderLicenseBadge(data.license)}
-  ## Description
-  ${data.description}
+ ${renderDescriptionSection(data.description)}
   ## Table of Contents
   ${renderLicenseLink(data.license)}
   # ${data.userName}
