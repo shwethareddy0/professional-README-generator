@@ -96,7 +96,7 @@ function renderInstallationSection(installation) {
     return `## Installation
 To install necessary dependencies, run the following command:
 
-   ${installation}`;
+    ${installation}`;
   } else {
     return "";
   }
@@ -145,7 +145,9 @@ ${contributing}`;
 function renderTestsSection(tests) {
   if (tests) {
     return `## Tests
-${tests}`;
+To run tests, run the following command:
+
+    ${tests}`;
   } else {
     return "";
   }
