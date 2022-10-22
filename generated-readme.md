@@ -1,7 +1,7 @@
-# HOMR
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# sfgsafgsafg
+ [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
  ## Description
-about sports and tickets
+gsfagasfg
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -10,14 +10,14 @@ about sports and tickets
   - [Tests](#tests)
   - [Questions](#questions)
   ## Installation
-npm i
+sgdsfag
   ## Usage
-be kind
+asfgasfg
   ## License
-This project is licensed under the [MIT](./LICENSE) license.
+This project is licensed under the APACHE 2.0 license.
   ## Contributing
-add content
+asdgfsadg
   ## Tests
-npm tests
+sgasfg
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at shwetha.reddy0@gmail.com. You can find more of my work at [shwethareddy0](https://github.com/shwethareddy0).
+  If you have any questions about the repo, open an issue or contact me directly at gsafgasg. You can find more of my work at [dgfkdgf](https://github.com/dgfkdgf).
