@@ -71,16 +71,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
-/*Title of the project
-Sections
-  -Description
-  -Table of Contents
-    -Installation
-    -Usage
-    -License
-    -Contributing
-    -Tests
-    -Questions
-        -- If you have any questions about the repo,open an issue or contact me directly at (email.com). You can find more of my work at (github username with link to github profile).
-        */

@@ -12,6 +12,7 @@ function renderLicenseBadge(license) {
     return "";
   }
 }
+
 //Description section
 //  Create a function that returns the description section of README
 // If there is no description, return an empty string
@@ -152,7 +153,7 @@ ${tests}`;
 function renderQuestionsSection(email, userName) {
   if (email && userName) {
     return `## Questions
-  If you have any questions about the repo,open an issue or contact me directly at ${email}. You can find more of my work at ${userName}.`;
+  If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at [${userName}](https://github.com/${userName}).`;
   } else {
     return "";
   }
