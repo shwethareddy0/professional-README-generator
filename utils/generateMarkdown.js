@@ -94,7 +94,9 @@ function renderQuestionsLink() {
 function renderInstallationSection(installation) {
   if (installation) {
     return `## Installation
-${installation}`;
+To install necessary dependencies, run the following command:
+
+   ${installation}`;
   } else {
     return "";
   }

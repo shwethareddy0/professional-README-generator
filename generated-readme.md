@@ -1,7 +1,7 @@
-# sfgsafgsafg
- [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# sfgasg
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  ## Description
-gsfagasfg
+sfgsag
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -10,14 +10,16 @@ gsfagasfg
   - [Tests](#tests)
   - [Questions](#questions)
   ## Installation
-sgdsfag
+To install necessary dependencies, run the following command:
+
+   npm i
   ## Usage
-asfgasfg
+fgsfg
   ## License
-This project is licensed under the APACHE 2.0 license.
+This project is licensed under the MIT license.
   ## Contributing
-asdgfsadg
+asdgasd
   ## Tests
-sgasfg
+sgsag
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at gsafgasg. You can find more of my work at [dgfkdgf](https://github.com/dgfkdgf).
+  If you have any questions about the repo, open an issue or contact me directly at dfd@yahoo.com. You can find more of my work at [dfdsf](https://github.com/dfdsf).
